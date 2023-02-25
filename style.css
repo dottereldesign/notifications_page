@@ -120,3 +120,7 @@ header {
   width: 39px;
   height: 39px;
 }
+
+.notifcation_message-img_reply {
+  display: flex;
+}
