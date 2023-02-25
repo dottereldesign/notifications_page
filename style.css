@@ -99,3 +99,24 @@ select {
   font-family: var(--ff-primary-100);
   font-size: inherit;
 }
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px;
+}
+
+.notification_unread,
+.notification_read {
+  display: flex;
+  flex-direction: column;
+}
+
+.notification_message {
+  display: flex;
+}
+
+.notification_message img:first-child {
+  width: 39px;
+  height: 39px;
+}
