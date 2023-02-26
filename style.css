@@ -65,6 +65,7 @@ body {
 }
 /* A elements that don't have a class get default styles */
 a:not([class]) {
+  -webkit-text-decoration-skip: ink;
   text-decoration-skip-ink: auto;
 }
 /* Make images easier to work with */
@@ -88,7 +89,9 @@ select {
   *,
   *::before,
   *::after {
+    -webkit-animation-duration: 0.01ms !important;
     animation-duration: 0.01ms !important;
+    -webkit-animation-iteration-count: 1 !important;
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
@@ -100,16 +103,50 @@ select {
   font-size: inherit;
 }
 
-header {
+body {
+  background-color: var(--clr-neutral-200);
+}
+
+/* header */
+.main_header {
   display: flex;
   justify-content: space-between;
   padding: 16px;
+  width: min(100%, 670px);
+  margin: 0 auto 0 auto;
+  background-color: var(--clr-neutral-100);
+}
+
+/* main - notifications */
+main {
+  background-color: var(--clr-neutral-100);
+  padding: 16px;
+  width: min(100%, 720px);
+  margin: 32px auto 32px auto;
+  border-radius: 15px;
+}
+
+.notification {
+  width: min(100%, 670px);
+  margin: 0 auto 8px auto;
+  background-color: var(--clr-neutral-100);
+  padding: 16px;
+}
+
+.notification_unread {
+  border-radius: 8px;
 }
 
 .notification_unread,
 .notification_read {
   display: flex;
   flex-direction: column;
+}
+
+.notification_message-unread {
+  background-color: var(--clr-neutral-200);
+  padding: 16px;
+  border-radius: 8px;
 }
 
 .notification_message {
@@ -119,6 +156,7 @@ header {
 .notification_message img:first-child {
   width: 39px;
   height: 39px;
+  margin-right: 16px;
 }
 
 .notifcation_message-img_reply {
