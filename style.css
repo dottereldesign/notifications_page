@@ -26,6 +26,7 @@
   --fw-medium: 500;
   --fw-semi-bold: 600;
   --fw-bold: 700;
+  --fw-extra-bold: 800;
 }
 
 /* https://piccalil.li/blog/a-modern-css-reset */
@@ -172,5 +173,44 @@ main {
   text-decoration: none;
   color: var(--clr-neutral-700);
   font-size: var(--fs-400);
-  font-weight: var(--fw-semi-bold);
+  font-weight: var(--fw-extra-bold);
+}
+
+p {
+  color: var(--clr-neutral-600);
+  font-weight: var(--fw-medium);
+}
+
+.notification_time {
+  color: var(--clr-neutral-500);
+  font-size: var(--fs-400);
+  font-weight: var(--fw-medium);
+}
+
+.notification_unread p:first-child::after {
+  content: "";
+  width: 8px;
+  height: 8px;
+  position: absolute;
+
+  background-color: var(--clr-primary-100);
+  border-radius: 100%;
+  display: inline-block;
+  margin: 9px 0 0 8px;
+}
+
+.notification_club {
+  color: var(--clr-primary-200);
+  font-weight: var(--fw-extra-bold);
+}
+
+.notification_post {
+  font-weight: var(--fw-bold);
+}
+
+.notification_comment {
+  margin: 10px 0 0 55px;
+  border: 1px solid var(--clr-neutral-400);
+  padding: 20px;
+  border-radius: 5px;
 }

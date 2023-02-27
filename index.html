@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -27,7 +27,7 @@
         <img class="message_avatar" src="assets/images/avatar-mark-webber.webp" alt="Mark's avatar.">
 
         <div class="notification_message-col-2">
-          <p><a href="#">Mark Webber</a> reacted to your recent post My first tournament today!</p>
+          <p><a href="#">Mark Webber</a> reacted to your recent post <span class="notification_post">My first tournament today!</span></p>
           <p class="notification_time">1m ago</p>
         </div>
       </div>
@@ -49,24 +49,25 @@
         <img class="message_avatar" src="assets/images/avatar-jacob-thompson.webp" alt="Jacob's avatar.">
 
         <div class="notification_message-col-2">
-          <p><a href="#">Jacob Thompson</a> has joined your group Chess Club</p>
+          <p><a href="#">Jacob Thompson</a> has joined your group <span class="notification_club">Chess Club</span></p>
           <p class="notification_time">1 day ago</p>
         </div>
       </div>
     </article>
 
     <article class="notification notification_read">
-      <div class="notification_message">
-        <img class="message_avatar" src="assets/images/avatar-rizky-hasanuddin.webp" alt="Rizky's avatar.">
-
-        <div class="notification_message-col-2">
-          <p><a href="#">Rizky Hasanuddin</a> sent you a private message</p>
-          <p class="notification_time">5 days ago</p>
-          <p>
-            Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and
-            I'm already having lots of fun and improving my game.
-          </p>
+      <div class="notification_comment-wrapper">
+        <div class="notification_message">
+          <img class="message_avatar" src="assets/images/avatar-rizky-hasanuddin.webp" alt="Rizky's avatar.">
+          <div class="notification_message-col-2">
+            <p><a href="#">Rizky Hasanuddin</a> sent you a private message</p>
+            <p class="notification_time">5 days ago</p>
+          </div>
         </div>
+        <p class="notification_comment">
+          Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and
+          I'm already having lots of fun and improving my game.
+        </p>
       </div>
     </article>
 
