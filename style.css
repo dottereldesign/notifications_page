@@ -105,6 +105,7 @@ select {
 
 body {
   background-color: var(--clr-neutral-200);
+  padding: 16px;
 }
 
 /* header */
@@ -130,7 +131,11 @@ main {
   width: min(100%, 670px);
   margin: 0 auto 8px auto;
   background-color: var(--clr-neutral-100);
-  padding: 16px;
+}
+
+.notification_read {
+  margin-top: 24px;
+  padding: 0 16px;
 }
 
 .notification_unread {
@@ -159,6 +164,13 @@ main {
   margin-right: 16px;
 }
 
-.notifcation_message-img_reply {
+.notification_message-img_reply {
   display: flex;
+}
+
+.notification_message-col-2 a {
+  text-decoration: none;
+  color: var(--clr-neutral-700);
+  font-size: var(--fs-400);
+  font-weight: var(--fw-semi-bold);
 }
